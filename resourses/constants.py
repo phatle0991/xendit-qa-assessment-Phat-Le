@@ -4,7 +4,8 @@ SEL_TIMEOUT = 5000
 SHORT_SLEEP = 1000
 MEDIUM_SLEEP = 2000
 LONG_SLEEP = 3000
-CHROME_VERSION = "91.0.4472.101"
+CHROME_VERSION = None
+FIREFOX_VERSION = None
 URL = {
     "calculator_page": "https://www.online-calculator.com/full-screen-calculator/"
 }

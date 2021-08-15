@@ -12,7 +12,7 @@
 >Design pattern: POM
 
 ## Download a Framework
-Automation Test Framework: https://github.com/phatle0991/xendit-qa-assessment
+Automation Test Framework: https://github.com/phatle0991/xendit-qa-assessment-Phat-Le
 
 Manual Test Case: https://docs.google.com/spreadsheets/d/1NK6iVLWKT7geDorIgjw6jwL3UrnfnkFnV72fvD_iAgY/edit?usp=sharing
 

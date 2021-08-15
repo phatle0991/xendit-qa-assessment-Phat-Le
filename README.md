@@ -3,6 +3,8 @@
 >
 >Web Driver: Selenium
 >
+>Web Driver Version Management: webdriver_manager
+>
 >BDD: Behave
 >
 >OCR: gpyocr
@@ -76,6 +78,13 @@ We develop Test Case following POM x BDD:
 
 ## Run test cases
 This test framework is using Behave which supports several ways to run and select tests from the command-line.
+
+### Setup Browser Driver version
+This test framework using webdriver_manager to manage the browser version. By default this test framework will run on the Chrome browser and install the latest chrome driver. 
+
+If you want to run with specific chrome driver version, please set below value:
+
+>**resources/constants: CHROME_VERSION=<CHROME_VERISION_VALUE>**
 
 ### Run all tests
 > pipenv run behave

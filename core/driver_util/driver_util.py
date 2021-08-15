@@ -29,7 +29,7 @@ class Driver:
         self._driver.quit()
 
     def init_chrome_browser(self):
-        if constants.CHROME_VERSION:
+        if constants.CHROME_VERSION is not None:
             self._driver = webdriver.Chrome(executable_path=ChromeDriverManager(constants.CHROME_VERSION).install())
         else:
             self._driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
@@ -37,6 +37,10 @@ class Driver:
         return self._driver
 
     def init_firefox_browser(self):
-        self._driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+        if constants.FIREFOX_VERSION is not None:
+            self._driver = webdriver.Firefox(executable_path=GeckoDriverManager(constants.FIREFOX_VERSION).install())
+        else:
+            self._driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+
         self._driver.implicitly_wait(constants.SEL_TIMEOUT)
         return self._driver

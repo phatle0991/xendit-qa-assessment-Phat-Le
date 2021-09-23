@@ -21,6 +21,8 @@ tesserocr = "*"
 pyocr = "*"
 gpyocr = "*"
 allure-behave = "*"
+faker = "*"
+uuid = "*"
 
 [scripts]
 behave = "behave -f allure_behave.formatter:AllureFormatter -o ./report"

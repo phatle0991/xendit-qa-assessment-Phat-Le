@@ -14,3 +14,4 @@ def get_ocr_text(file_path):
         return ""
     else:
         return text_result
+
